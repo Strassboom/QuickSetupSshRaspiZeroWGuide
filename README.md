@@ -43,26 +43,42 @@ Quickest way to set up a Raspberry Pi Zero W for ssh over usb
 ## Boot Editing
 ##### Step Count: 8
 1. Go to the boot drive in your computer
+    - **Time to completion**: 5-10 seconds
 2. Open config.txt
+    - **Time to completion**: 3 seconds
 3. Append `dtoverlay=dwc2` to a new line at the end of the file
+    - **Time to completion**: 3-10 seconds
 4. Save and close config.txt
+    - **Time to completion**: 3 seconds
 5. Open cmdline.txt leave (1) space between the text `rootawait` and `modules-load=dwc2,g_ether`
     -  If any text follows `rootawait`, then leave (1) space between `modules-load=dwc2,g_ether` and that text block as well
+    - **Time to completion**: 5-10 seconds
 6. create an empty file named `ssh` in the boot drive
     - Ensure the file is not followed by `.txt` or any other file extension
+    - **Time to completion**: 5-10 seconds
 7. Select eject for the boot drive
+    - **Time to completion**: 3-5 seconds
 8. Physically unplug the MicroSD card from your computer
+    - **Time to completion**: 3-5 seconds
 
 ## Testing Connection
-
+##### Step Count: 8
 1. Insert the MicroSD Card into your Raspberry Pi Zero W
     - The golden strips should be facing the the raspberry pi if you are looking from the top of the Raspberry pi during insertion, or "butter-side down"
+    - **Time to completion**: 5-10 seconds
 2. Plug the MicroUSB connector of your cable into the "Data" MicroUSB port on your Raspberry Pi Zero W
     - This port is between the MiniHDMI port and the "Power" MicroUSB port
+    - **Time to completion**: 5-10 seconds
 3. Plug the other side of the cable into your computer
+    - **Time to completion**: 3-5 seconds
 4. Wait about a minute for the raspberry pi to boot up
+    - **Time to completion**: ~1 minute
 5. Open your terminal
+    - **Time to completion**: 5-10 seconds
 6. Type `ssh pi@raspberrypi.local` and press enter
+    - **Time to completion**: 5-10 seconds
 7. if asked to pass to continue regarding a "Key Fingerprint", select type yes and press enter
+    - **Time to completion**: 3-5 seconds
 8. Enter the default password `raspberry`
     - If you see `pi@raspberrypi:` Then you are now done!
+    - **Time to completion**: 3-5 seconds
